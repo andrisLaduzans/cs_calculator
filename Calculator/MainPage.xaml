@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+
+     <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0">
+            
+            <Label x:Name="LabelTxt" Text="Lala" FontSize="32" HorizontalOptions="End"></Label>
+
+            <Grid RowDefinitions="*, *, *, *, *" ColumnDefinitions="*, *, *, *, *" ColumnSpacing="8" RowSpacing="8">
+                <Button ClassId="BACKSPACE" Grid.Row="0" Grid.Column="0" Text="←" Clicked="OnClick"/>
+                <Button ClassId="CE" Grid.Row="0" Grid.Column="1"  Text="CE" Clicked="OnClick"/>
+                <Button ClassId="C" Grid.Row="0" Grid.Column="2" Text="C" Clicked="OnClick"/>
+                <Button ClassId="INVERT_SIGN" Grid.Row="0" Grid.Column="3" Text="+/-" Clicked="OnClick"/>
+                <Button ClassId="SQRT" Grid.Row="0" Grid.Column="4" Text="√" Clicked="OnClick" />
+
+                <Button ClassId="NUMBER_7" Grid.Row="1" Grid.Column="0" Text="7" Clicked="OnClick" />                                   
+                <Button ClassId="NUMBER_8" Grid.Row="1" Grid.Column="1" Text="8" Clicked="OnClick"/>
+                <Button ClassId="NUMBER_9" Grid.Row="1" Grid.Column="2" Text="9" Clicked="OnClick"/>
+                <Button ClassId="DIVIDE" Grid.Row="1" Grid.Column="3" Text="/" Clicked="OnClick"/>
+                <Button ClassId="PRCNT" Grid.Row="1" Grid.Column="4" Text="%" Clicked="OnClick"/>
+
+                <Button ClassId="NUMBER_4" Grid.Row="2" Grid.Column="0" Text="4" Clicked="OnClick"/>
+                <Button ClassId="NUMBER_5" Grid.Row="2" Grid.Column="1" Text="5" Clicked="OnClick"/>
+                <Button ClassId="NUMBER_6" Grid.Row="2" Grid.Column="2" Text="6" Clicked="OnClick"/>
+                <Button ClassId="MULTIPLY" Grid.Row="2" Grid.Column="3" Text="*" Clicked="OnClick"/>
+                <Button ClassId="MULTIPLICATIVE_INVERSE" Grid.Row="2" Grid.Column="4" Text="1/x" Clicked="OnClick"/>
+
+                <Button ClassId="NUMBER_1" Grid.Row="3" Grid.Column="0" Text="1" Clicked="OnClick"/>
+                <Button ClassId="NUMBER_2" Grid.Row="3" Grid.Column="1" Text="2" Clicked="OnClick"/>
+                <Button ClassId="NUMBER_3" Grid.Row="3" Grid.Column="2" Text="3" Clicked="OnClick"/>
+                <Button ClassId="SUBTRACT" Grid.Row="3" Grid.Column="3" Text="*" Clicked="OnClick"/>
+                <Button ClassId="CALCULATE" Grid.Row="3" Grid.Column="4" Grid.RowSpan="2" Text="=" Clicked="OnClick"/>
+
+                <Button ClassId="NUMBER_0" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Text="0" Clicked="OnClick"/>
+                <Button ClassId="DOT" Grid.Row="4" Grid.Column="2" Text="." Clicked="OnClick"/>
+                <Button ClassId="SUM" Grid.Row="4" Grid.Column="3" Text="+" Clicked="OnClick"/>                
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
